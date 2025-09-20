@@ -31,3 +31,38 @@ Check out the live app here: https://trackatfintrack.streamlit.app/
 <img width="1917" height="916" alt="Screenshot 2025-09-20 122418" src="https://github.com/user-attachments/assets/dfcce85f-bfbd-4dd6-9a92-af3b245d9e96" />
 
 <img width="1915" height="1013" alt="Screenshot 2025-09-20 122452" src="https://github.com/user-attachments/assets/0eceea81-c4d3-4731-8236-f550b9201a2a" />
+
+## How It Works / Project Workflow
+
+1. **Upload Data**  
+   - Upload your bank statement CSV/Excel file containing `Date`, `Description`, `Amount`, and `Type`.  
+   - If no file is uploaded, a sample dataset can be used.
+
+2. **Data Cleaning & Categorization**  
+   - Dates and amounts are converted to proper formats.  
+   - Transactions are automatically categorized based on keywords (e.g., Amazon → Shopping, Zomato → Food).
+
+3. **Filtering & Analysis**  
+   - Use sidebar filters to select categories or a date range.  
+   - View all transactions in a sortable and searchable table.  
+   - See interactive charts summarizing expenses by category and month.
+
+4. **Financial Insights**  
+   - Total Income, Total Expenses, Net Savings, and Top 5 Spending Categories are calculated and displayed.  
+   - Alerts/warnings notify if spending exceeds income or savings are low.
+
+5. **Expense Prediction**  
+   - Predict next month’s expenses using a simple linear regression model based on historical data.  
+   - Visualize actual vs predicted expenses with charts.
+
+6. **Download Data**  
+   - Filtered or processed data can be downloaded as an Excel file for offline use.
+
+## Deployment
+
+The app is deployed on **Streamlit Cloud**:  
+
+1. Push your repository to GitHub.  
+2. Go to [Streamlit Cloud](https://share.streamlit.io/) and log in with GitHub.  
+3. Click **New app**, select your repository and branch, and set the main file to `fintrack.py`.  
+4. Click **Deploy**. The app will be live with a shareable URL.
